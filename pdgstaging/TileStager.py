@@ -1,4 +1,3 @@
-import logging
 from . import logging_config
 import os
 import uuid
@@ -10,7 +9,9 @@ import numpy as np
 import pandas as pd
 from filelock import FileLock
 
-from . import ConfigManager, TilePathManager, TMSGrid
+from . import TMSGrid
+
+from viz_utils import ConfigManager, TilePathManager
 from .Deduplicator import clip_gdf
 
 logger = logging_config.logger
